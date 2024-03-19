@@ -1,0 +1,177 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvt3Mz5M5eM3SVbQVKGlgRZqGByx27WYh_k9fV-tfOh1_-JwrEDViNGHNPAI5QenN4eMI&usqp=CAU');
+    background-size: cover; /* Adjust the image size to cover the entire background */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fix the background image position */
+    color: #fff; /* Set text color to white */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative; /* Position relative to create a reference point for pseudo-element */
+}
+
+nav ul li a {
+    color: #8bc71d;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #09282c;
+}
+
+/* Create the blue shade line */
+nav ul li::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    bottom: -5px; /* Adjust this value to control the position of the line */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust this value to control the thickness of the line */
+    background-color: #1a1f1f; /* Blue shade color */
+    transition: width 0.3s ease; /* Optional transition effect */
+}
+
+/* Hover effect to expand the line */
+nav ul li:hover::after {
+    width: 100%; /* Expand the line to 100% width on hover */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Add padding to the main content to prevent it from being hidden under the fixed header */
+main {
+    padding-top: 80px; /* Adjust this value according to the height of your header */
+}
+
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.features {
+    text-align: center;
+}
+
+.features ul {
+    padding: 0;
+}
+
+.features li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #254052; /* Full shade of blue */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.container form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.container form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container form input[type="text"],
+.container form input[type="email"],
+.container form input[type="password"],
+.container form select,
+.container form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #1a0a0a; /* Set text color to white */
+}
+
+.container form button {
+    background-color: #a82929;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container form button:hover {
+    background-color: #00bcd4;
+}
+
+img {
+    width: 70vw; /* Set the width to 50% of the viewport width */
+    height: 0; /* Maintain the aspect ratio */
+    display: block; /* Remove any default inline spacing */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
