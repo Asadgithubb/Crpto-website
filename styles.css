@@ -168,7 +168,7 @@ h2 {
 }
 
 img {
-    width: 70vw; /* Set the width to 50% of the viewport width */
+    width: 100vw; /* Set the width to 50% of the viewport width */
     height: 0; /* Maintain the aspect ratio */
     display: block; /* Remove any default inline spacing */
     margin: 0; /* Remove any default margin */
